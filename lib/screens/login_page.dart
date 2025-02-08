@@ -88,6 +88,34 @@ class LoginPage extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            spacing: 5,
+            children: [
+              Text('Already have an account?'),
+              Text(
+                'Sign in',
+                style: TextStyle(
+                  color: AppColor.highlightColor,
+                ),
+              ),
+            ],
+          ),
+          Spacer(),
+          Container(
+            width: AppSize.width,
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+            decoration: BoxDecoration(
+                color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+            child: Center(
+                child: Text(
+              'Continue',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
+            )),
           )
         ],
       ),
