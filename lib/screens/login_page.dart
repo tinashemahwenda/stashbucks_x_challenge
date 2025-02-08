@@ -24,13 +24,12 @@ class LoginPage extends StatelessWidget {
                 'Welcome to Stashbucks',
                 style: TextStyle(
                   color: AppColor.textColor,
-                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Text(
             'Verify your number \nwith code',
@@ -107,7 +106,8 @@ class LoginPage extends StatelessWidget {
             width: AppSize.width,
             padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
             decoration: BoxDecoration(
-                color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+                color: AppColor.buttonColor,
+                borderRadius: BorderRadius.circular(10)),
             child: Center(
                 child: Text(
               'Continue',
