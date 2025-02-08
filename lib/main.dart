@@ -18,6 +18,7 @@ class StashBucksApp extends StatelessWidget {
       AppColor.textColor = Color.fromARGB(255, 34, 51, 114);
       AppColor.highlightColor = Color.fromARGB(255, 21, 161, 254);
       AppColor.secondaryText = Color.fromARGB(255, 15, 24, 57);
+      AppColor.buttonColor = Color.fromARGB(255, 2, 76, 248);
       return MaterialApp(
         home: HomePage(),
         debugShowCheckedModeBanner: false,
