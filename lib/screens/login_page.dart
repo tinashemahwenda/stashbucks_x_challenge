@@ -69,7 +69,18 @@ class LoginPage extends StatelessWidget {
                 ),
                 child: Row(
                   spacing: 10,
-                  children: [Icon(Icons.flag_circle_sharp), Text('+263')],
+                  children: [
+                    Image.asset(
+                      'assets/images/zimbabwe.png',
+                      width: 20,
+                    ),
+                    Text(
+                      '+263',
+                      style: TextStyle(
+                        color: AppColor.textColor,
+                      ),
+                    )
+                  ],
                 ),
               ),
               Expanded(
@@ -92,11 +103,18 @@ class LoginPage extends StatelessWidget {
           Row(
             spacing: 5,
             children: [
-              Text('Already have an account?'),
+              Text(
+                'Already have an account?',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Text(
                 'Sign in',
                 style: TextStyle(
                   color: AppColor.highlightColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
             ],
