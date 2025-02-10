@@ -10,4 +10,5 @@ class AppColor {
   static late Color buttonColor;
   static late Color secondaryText;
   static late Color highlightColor;
+  static late Color primaryDarkText;
 }
