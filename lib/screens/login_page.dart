@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stashbucks_x_challenge/constants/constants.dart';
+import 'package:stashbucks_x_challenge/screens/login_page_dark.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -61,9 +62,9 @@ class LoginPage extends StatelessWidget {
             spacing: 10,
             children: [
               Container(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(17),
                 decoration: BoxDecoration(
-                  border: Border.all(width: 1, color: Colors.grey),
+                  border: Border.all(width: 1, color: Colors.black54),
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
                 ),
@@ -78,6 +79,7 @@ class LoginPage extends StatelessWidget {
                       '+263',
                       style: TextStyle(
                         color: AppColor.textColor,
+                        fontSize: 12,
                       ),
                     )
                   ],
@@ -86,20 +88,22 @@ class LoginPage extends StatelessWidget {
               Expanded(
                 child: TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(
-                        width: 1,
-                        color: Colors.grey,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(
+                          width: 1,
+                          color: Colors.red,
+                        ),
                       ),
-                    ),
-                    hintText: 'Phone number',
-                  ),
+                      hintText: 'Phone number',
+                      hintStyle: TextStyle(
+                        fontSize: 12,
+                      )),
                 ),
               )
             ],
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 10),
           Row(
             spacing: 5,
             children: [
@@ -120,21 +124,25 @@ class LoginPage extends StatelessWidget {
             ],
           ),
           Spacer(),
-          Container(
-            width: AppSize.width,
-            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-            decoration: BoxDecoration(
-                color: AppColor.buttonColor,
-                borderRadius: BorderRadius.circular(10)),
-            child: Center(
-                child: Text(
-              'Continue',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            )),
+          InkWell(
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => LoginPageDark())),
+            child: Container(
+              width: AppSize.width,
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+              decoration: BoxDecoration(
+                  color: AppColor.buttonColor,
+                  borderRadius: BorderRadius.circular(10)),
+              child: Center(
+                  child: Text(
+                'Continue',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
+            ),
           )
         ],
       ),
