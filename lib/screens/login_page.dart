@@ -114,7 +114,7 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   color: AppColor.highlightColor,
                   fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontSize: 14,
                 ),
               ),
             ],
@@ -130,8 +130,9 @@ class LoginPage extends StatelessWidget {
                 child: Text(
               'Continue',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 16,
                 color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
             )),
           )
