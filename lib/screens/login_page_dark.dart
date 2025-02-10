@@ -17,10 +17,13 @@ class LoginPageDark extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(
-                  Icons.cancel,
-                  color: AppColor.highlightColor,
-                  size: 30,
+                InkWell(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
+                    Icons.cancel,
+                    color: AppColor.highlightColor,
+                    size: 30,
+                  ),
                 ),
                 Text(
                   'Welcome to Stashbucks',
@@ -47,7 +50,7 @@ class LoginPageDark extends StatelessWidget {
               'We\'ll send a code. It helps to keep \nyour account secure',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 12,
+                //fontSize: 12,
               ),
             ),
             SizedBox(height: 15),
@@ -55,7 +58,7 @@ class LoginPageDark extends StatelessWidget {
               'Your phone number',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 12,
+                //fontSize: 12,
               ),
             ),
             SizedBox(
