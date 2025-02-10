@@ -20,6 +20,9 @@ class StashBucksApp extends StatelessWidget {
       AppColor.secondaryText = Color.fromARGB(255, 15, 24, 57);
       AppColor.buttonColor = Color.fromARGB(255, 2, 76, 248);
       return MaterialApp(
+        theme: ThemeData(
+          fontFamily: 'Jarkata',
+        ),
         home: HomePage(),
         debugShowCheckedModeBanner: false,
       );
