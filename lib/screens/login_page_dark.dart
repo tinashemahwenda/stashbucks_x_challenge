@@ -110,7 +110,7 @@ class LoginPageDark extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Row(
               spacing: 5,
               children: [
